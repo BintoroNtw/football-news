@@ -62,3 +62,4 @@ def show_json_by_id(request, news_id):
     except News.DoesNotExist:
         return HttpResponse(status=404)
 # Create your views here.
+#Testing Semoga PWS PUSH
