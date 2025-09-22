@@ -32,13 +32,16 @@ def show_main(request):
 def create_news(request):
     form = NewsForm(request.POST or None)
 
-    if form.is_valid() and request.method == "POST":
+    if form.is_valid() and request.method == 'POST':
         news_entry = form.save(commit = False)
         news_entry.user = request.user
         news_entry.save()
         return redirect('main:show_main')
 
-    context = {'form': form}
+    context = {
+        'form': form
+    }
+
     return render(request, "create_news.html", context)
 
 @login_required(login_url='/login')

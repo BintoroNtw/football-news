@@ -32,7 +32,9 @@ DEBUG = True
 
 ALLOWED_HOSTS = ["localhost","127.0.0.1","bintoro-nata-footballnews.pbp.cs.ui.ac.id"]
 CSRF_TRUSTED_ORIGINS = [
-    "https://bintoro-nata-footballnews.pbp.cs.ui.ac.id/"
+    "https://bintoro-nata-footballnews.pbp.cs.ui.ac.id"
+    #Perbaikan hapus "/" di akhir string
+    #Bismillah berjalan dengan baik
 ]
 
 # Application definition
