@@ -14,6 +14,7 @@ from django.views.decorators.http import require_POST
 from django.utils.html import strip_tags
 import requests
 import json
+
 @login_required(login_url='/login')
 def show_main(request):
     filter_type= request.GET.get("filter", "all")

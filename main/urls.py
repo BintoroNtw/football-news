@@ -1,5 +1,5 @@
 from django.urls import path
-from main.views import show_main, create_news, show_news, show_xml, show_json, show_xml_by_id, show_json_by_id,register,login_user,logout_user,edit_news,delete_news,add_news_entry_ajax,proxy_image,create_news_flutter
+from main.views import show_main, create_news, show_news, show_xml, show_json, show_xml_by_id, show_json_by_id,register,login_user,logout_user,edit_news,delete_news,add_news_entry_ajax,proxy_image,create_news_flutter,logout
 
 app_name = 'main'
 
@@ -19,5 +19,4 @@ urlpatterns = [
     path('create-news-ajax', add_news_entry_ajax, name='add_news_entry_ajax'),
     path('proxy-image/', proxy_image, name='proxy_image'),
     path('create-flutter/', create_news_flutter, name='create_news_flutter'),
-
 ]
